@@ -20,19 +20,29 @@ body {
     font-size: $body;
 
     .container {
-        height: auto;
+        height: 100vh;
         background-color: $white-bg;
         position: relative;
         overflow: hidden;
 
-        @media all and (min-width: 648px) {
-            height: 100vh;
+        .top-left {
+            @extend %bg;
+            top: -72rem;
+            left: -7%;
         }
 
-        .top-left {
-            position: relative;
-            width: 51rem;
-            height: 101.8;
+        .bottom-right {
+            @extend %bg;
+            bottom: -72rem;
+            right: -7%;
+            opacity: 0.03;
+        }
+
+        main {
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            padding: 6.4rem 3.2rem;
         }
 }
 

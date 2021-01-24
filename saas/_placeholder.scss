@@ -4,3 +4,11 @@
     margin-bottom: 0.8rem;
     padding: 0.6rem 0.8rem;
 }
+
+%bg{
+    position: absolute;
+    width: 500px;
+    height: 101.8rem;
+    border-radius: 250px;
+    background: linear-gradient(225deg, $light-magneta, $light-violet);
+}

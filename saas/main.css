@@ -18,21 +18,39 @@ body {
 }
 
 body .container {
-  height: auto;
+  height: 100vh;
   background-color: #f2f2f2;
   position: relative;
   overflow: hidden;
 }
 
-@media all and (min-width: 648px) {
-  body .container {
-    height: 100vh;
-  }
+body .container .top-left {
+  position: absolute;
+  width: 500px;
+  height: 101.8rem;
+  top: -72rem;
+  border-radius: 250px;
+  left: -7%;
+  background: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(225deg, #e942ff, #8838ff);
 }
 
-body .container .top-left {
-  position: relative;
-  width: 51rem;
-  height: 101.8;
+body .container .bottom-right {
+  position: absolute;
+  width: 500px;
+  height: 101.8rem;
+  bottom: -72rem;
+  border-radius: 250px;
+  right: -7%;
+  background: -webkit-gradient(linear, left top, right top, from(#e942ff), to(#8838ff));
+  background: linear-gradient(225deg, #e942ff, #8838ff);
+  opacity: 0.03;
+}
+
+body .container main {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  
 }
 /*# sourceMappingURL=main.css.map */
